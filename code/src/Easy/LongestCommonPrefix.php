@@ -22,5 +22,32 @@ class LongestCommonPrefix
 {
     public static function run(array $strings): string
     {
+        $first = $strings[0];
+        $firstLength = strlen($first);
+        $length = count($strings);
+
+        $prefix = '';
+        $lenMax = 0;
+
+        for ($j = 0; $j < $firstLength; $j++) {
+            $prefix .= $first[$j];
+            ++$lenMax;
+            $allPass = true;
+
+            for ($i = 1; $i < $length; $i++) {
+                $str = $strings[$i];
+                if (strpos($str, $prefix) !== 0) {
+                    $allPass = false;
+                    break;
+                }
+            }
+
+            if ($allPass === false) {
+                --$lenMax;
+                break;
+            }
+        }
+
+        return substr($first, 0, $lenMax);
     }
 }
