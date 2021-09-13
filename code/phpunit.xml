@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+>
+    <testsuites>
+        <testsuite name="Easy">
+            <directory suffix="Test.php">./tests/Easy</directory>
+        </testsuite>
+        <testsuite name="Medium">
+            <directory suffix="Test.php">./tests/Medium</directory>
+        </testsuite>
+        <testsuite name="Hard">
+            <directory suffix="Test.php">./tests/Hard</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
