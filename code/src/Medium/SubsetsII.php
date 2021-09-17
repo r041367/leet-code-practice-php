@@ -21,5 +21,34 @@ class SubsetsII
 {
     public static function run(array $nums): array
     {
+        $length = count($nums);
+
+        $max = 2 ** $length;
+
+        $switch = [];
+        for ($i = 1; $i < $max; $i++) {
+            $switch[] = sprintf('%0'.$length.'d', decbin($i));
+        }
+
+        $solution = [[]];
+        foreach ($switch as $bin) {
+            $arr = [];
+
+            for ($i = 0; $i < $length; $i++) {
+                if ((int)$bin[$i] === 1) {
+                    $arr[] = $nums[$i];
+                }
+            }
+
+            sort($arr);
+
+            $str = implode(',', $arr);
+            if (!isset($map[$str])) {
+                $solution[] = array_reverse($arr);
+                $map[$str] = true;
+            }
+        }
+
+        return $solution;
     }
 }
