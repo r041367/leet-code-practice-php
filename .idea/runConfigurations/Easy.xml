@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Easy" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-    <CommandLine>
+    <CommandLine workingDirectory="$PROJECT_DIR$">
       <PhpTestInterpreterSettings>
         <option name="interpreterName" value="php" />
       </PhpTestInterpreterSettings>
     </CommandLine>
-    <TestRunner configuration_file="/app/code/phpunit.xml" directory="$PROJECT_DIR$/code/tests/Easy" />
+    <TestRunner configuration_file="$PROJECT_DIR$/code/phpunit.xml" directory="$PROJECT_DIR$/code/tests/Easy" use_alternative_configuration_file="true" />
     <method v="2" />
   </configuration>
 </component>
