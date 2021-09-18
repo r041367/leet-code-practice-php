@@ -12,7 +12,7 @@ class UglyNumberTest extends TestCase
      * @param  int  $num
      * @param  bool  $expected
      */
-    public function test_Run_WithDataProvider_AllPass(int $num, bool $expected): void
+    public function test_IsUgly_WithDataProvider_AllPass(int $num, bool $expected): void
     {
         $actual = (new UglyNumber())->isUgly($num);
 
