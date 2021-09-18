@@ -22,9 +22,9 @@ class LengthOfLastWordTest extends TestCase
     public function dataProvider(): array
     {
         return [
-            ['Hello World', 5],
-            ['   fly me   to   the moon  ', 4],
-            ['luffy is still joyboy', 6],
+            'a' => ['Hello World', 5],
+            'b' => ['   fly me   to   the moon  ', 4],
+            'c' => ['luffy is still joyboy', 6],
         ];
     }
 }

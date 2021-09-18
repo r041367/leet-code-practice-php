@@ -21,9 +21,9 @@ class LongestCommonPrefixTest extends TestCase
     public function dataProvider(): array
     {
         return [
-            [['flower', 'flow', 'flight'], 'fl'],
-            [['dog', 'racecar', 'car'], ''],
-            [['dog'], 'dog'],
+            'a' => [['flower', 'flow', 'flight'], 'fl'],
+            'b' => [['dog', 'racecar', 'car'], ''],
+            'c' => [['dog'], 'dog'],
         ];
     }
 }

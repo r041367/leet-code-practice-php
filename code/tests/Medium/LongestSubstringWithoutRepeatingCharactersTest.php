@@ -22,11 +22,11 @@ class LongestSubstringWithoutRepeatingCharactersTest extends TestCase
     public function dataProvider(): array
     {
         return [
-            ["abcabcbb", 3],
-            ["bbbbb", 1],
-            ["pwwkew", 3],
-            ["", 0],
-            [" ", 1],
+            'a' => ["abcabcbb", 3],
+            'b' => ["bbbbb", 1],
+            'c' => ["pwwkew", 3],
+            'd' => ["", 0],
+            'e' => [" ", 1],
         ];
     }
 }
