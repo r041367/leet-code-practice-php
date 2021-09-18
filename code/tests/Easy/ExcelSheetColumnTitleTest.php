@@ -14,7 +14,7 @@ class ExcelSheetColumnTitleTest extends TestCase
      */
     public function test_Run_WithDataProvider_AllPass(int $columnNumber, string $expected): void
     {
-        $actual = ExcelSheetColumnTitle::run($columnNumber);
+        $actual = (new ExcelSheetColumnTitle())->convertToTitle($columnNumber);
 
         self::assertEquals($expected, $actual);
     }

@@ -12,9 +12,9 @@ class LengthOfLastWordTest extends TestCase
      * @param  string  $s
      * @param  int  $expected
      */
-    public function test_Run_WithDataProvider_AllPass(string $s, int $expected): void
+    public function test_LengthOfLastWord_WithDataProvider_AllPass(string $s, int $expected): void
     {
-        $actual = LengthOfLastWord::run($s);
+        $actual = (new LengthOfLastWord())->lengthOfLastWord($s);
 
         self::assertEquals($expected, $actual);
     }
@@ -22,9 +22,9 @@ class LengthOfLastWordTest extends TestCase
     public function dataProvider(): array
     {
         return [
-            'a' => ['Hello World', 5],
-            'b' => ['   fly me   to   the moon  ', 4],
-            'c' => ['luffy is still joyboy', 6],
+            'Hello World' => ['Hello World', 5],
+            '   fly me   to   the moon  ' => ['   fly me   to   the moon  ', 4],
+            'luffy is still joyboy' => ['luffy is still joyboy', 6],
         ];
     }
 }

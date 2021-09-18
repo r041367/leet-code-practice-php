@@ -19,7 +19,7 @@ namespace R041367\LeetCodePracticePhp\Medium;
  */
 class SubsetsII
 {
-    public static function run(array $nums): array
+    public function subsetsWithDup(array $nums): array
     {
         $length = count($nums);
 

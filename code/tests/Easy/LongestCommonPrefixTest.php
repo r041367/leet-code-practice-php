@@ -11,9 +11,9 @@ class LongestCommonPrefixTest extends TestCase
      * @dataProvider dataProvider
      * @param  string[]  $strings
      */
-    public function test_Run_WithDataProvider_AllPass(array $strings, string $expected): void
+    public function test_LongestCommonPrefix_WithDataProvider_AllPass(array $strings, string $expected): void
     {
-        $actual = LongestCommonPrefix::run($strings);
+        $actual = (new LongestCommonPrefix())->longestCommonPrefix($strings);
 
         self::assertEquals($expected, $actual);
     }
@@ -21,9 +21,9 @@ class LongestCommonPrefixTest extends TestCase
     public function dataProvider(): array
     {
         return [
-            'a' => [['flower', 'flow', 'flight'], 'fl'],
-            'b' => [['dog', 'racecar', 'car'], ''],
-            'c' => [['dog'], 'dog'],
+            "['flower', 'flow', 'flight']" => [['flower', 'flow', 'flight'], 'fl'],
+            "['dog', 'racecar', 'car']" => [['dog', 'racecar', 'car'], ''],
+            "['dog']" => [['dog'], 'dog'],
         ];
     }
 }

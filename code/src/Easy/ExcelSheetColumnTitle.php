@@ -17,7 +17,7 @@ namespace R041367\LeetCodePracticePhp\Easy;
  */
 class ExcelSheetColumnTitle
 {
-    public static function run(int $columnNumber): string
+    public function convertToTitle(int $columnNumber): string
     {
         // quotient 商
         // remainder 余数

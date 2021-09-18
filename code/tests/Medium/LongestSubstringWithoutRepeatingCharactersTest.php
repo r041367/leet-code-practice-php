@@ -12,9 +12,9 @@ class LongestSubstringWithoutRepeatingCharactersTest extends TestCase
      * @param  string  $string
      * @param  int  $expected
      */
-    public function test_Run_WithDataProvider_AllPass(string $string, int $expected): void
+    public function test_LengthOfLongestSubstring_WithDataProvider_AllPass(string $string, int $expected): void
     {
-        $actual = LongestSubstringWithoutRepeatingCharacters::run($string);
+        $actual = (new LongestSubstringWithoutRepeatingCharacters())->lengthOfLongestSubstring($string);
 
         self::assertEquals($expected, $actual);
     }
@@ -22,11 +22,11 @@ class LongestSubstringWithoutRepeatingCharactersTest extends TestCase
     public function dataProvider(): array
     {
         return [
-            'a' => ["abcabcbb", 3],
-            'b' => ["bbbbb", 1],
-            'c' => ["pwwkew", 3],
-            'd' => ["", 0],
-            'e' => [" ", 1],
+            'abcabcbb' => ['abcabcbb', 3],
+            'bbbbbb' => ['bbbbb', 1],
+            'pwwkewc' => ['pwwkew', 3],
+            '' => ['', 0],
+            ' ' => [' ', 1],
         ];
     }
 }

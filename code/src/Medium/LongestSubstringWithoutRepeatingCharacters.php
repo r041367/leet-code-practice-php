@@ -18,7 +18,7 @@ namespace R041367\LeetCodePracticePhp\Medium;
  */
 class LongestSubstringWithoutRepeatingCharacters
 {
-    public static function run(string $s): int
+    public function lengthOfLongestSubstring(string $s): int
     {
         $length = strlen($s);
         if ($length < 2) {

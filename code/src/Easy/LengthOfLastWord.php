@@ -20,7 +20,7 @@ namespace R041367\LeetCodePracticePhp\Easy;
  */
 class LengthOfLastWord
 {
-    public static function run(string $s): string
+    public function lengthOfLastWord(string $s): string
     {
         $s = trim($s);
         $arr = explode(' ', $s);

@@ -13,7 +13,7 @@ class SubsetsIITest extends TestCase
      */
     public function test_Run_WithDataProvider_AllPass(array $nums, array $expected): void
     {
-        $actual = SubsetsII::run($nums);
+        $actual = (new SubsetsII())->subsetsWithDup($nums);
 
         self::assertTrue($this->isAnswerEqual($expected, $actual));
     }

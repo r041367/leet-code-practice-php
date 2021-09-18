@@ -20,7 +20,7 @@ namespace R041367\LeetCodePracticePhp\Easy;
  */
 class LongestCommonPrefix
 {
-    public static function run(array $strings): string
+    public function longestCommonPrefix(array $strings): string
     {
         $first = $strings[0];
         $firstLength = strlen($first);
