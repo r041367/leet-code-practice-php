@@ -112,6 +112,7 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <phpunit_by_interpreter interpreter_id="a9b1b2be-f649-4bc3-a786-3df05d7ba806" custom_loader_path="/app/code/vendor/autoload.php" phpunit_phar_path="" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/code/vendor/autoload.php" />
     </phpunit_settings>
   </component>
 </project>
