@@ -11,7 +11,7 @@ class LongestCommonPrefixTest extends TestCase
      * @dataProvider dataProvider
      * @param  string[]  $strings
      */
-    public function test_WithDataProvider_AllPass(array $strings, string $expected): void
+    public function test_Run_WithDataProvider_AllPass(array $strings, string $expected): void
     {
         $actual = LongestCommonPrefix::run($strings);
 
