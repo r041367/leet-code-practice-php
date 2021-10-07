@@ -42,6 +42,10 @@ class MergeTwoSortedListsTest extends TestCase
 
     private function convertListNode(array $nums): ListNode
     {
+        if (count($nums) === 0) {
+            return new ListNode(null, null);
+        }
+
         $nums = array_reverse($nums);
 
         $node = null;
